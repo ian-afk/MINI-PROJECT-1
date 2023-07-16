@@ -10,61 +10,14 @@
 }
 
 .container-indorsement {
-  background-image: url("./miniproject-images/intro-bg.png");
+  background-image: url("./miniproject-images/intro-bg-final.png");
   height: 80vh;
-  background-position: -50px;
+  background-position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
 }
 
-.container-indorsement > div {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 40px;
-
-  margin-left: 46px;
-  margin-right: 46px;
+.container-indorsement img {
+  height: 200px;
 }
-.indorsement {
-  display: grid;
-  place-items: center;
-  text-align: center;
-  column-gap: 40px;
-}
-
-.indorsement-desc {
-  grid-column: 1 / span 6;
-}
-
-.indorsement-desc h1 {
-  font-size: 46px;
-}
-
-.indorsement-img {
-  margin-top: 60px;
-  grid-column: 7 / span 2;
-}
-.indorsement-img img {
-  height: 410px;
-}
-
-/* .indorsement {
-  display: grid;
-  place-items: center;
-  text-align: center;
-  column-gap: 40px;
-}
-
-.indorsement-desc {
-  grid-column: 1 / span 6;
-}
-.indorsement-img img {
-  height: 510px;
-}
-
-.indorsement-img {
-  grid-column: 6 / span 6;
-} */
-
-/* ARLO CHANGES */
