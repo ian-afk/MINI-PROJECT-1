@@ -4,20 +4,48 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.notification {
-  overflow: hidden;
+main {
+  display: block;
 }
 
 .container-indorsement {
-  background-image: url("./miniproject-images/intro-bg-final.png");
-  height: 80vh;
-  background-position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 600px;
 }
 
-.container-indorsement img {
-  height: 200px;
+.container-indorsement > div:first-child {
+  padding: 64px 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 700px;
+  width: 1210px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 40px;
+  margin: 0 46px;
+}
+
+.indorsement-desc {
+  text-align: center;
+  grid-column: 1 / span 6;
+}
+.indorsement-img {
+  grid-column: 7 / span 6;
+}
+
+.indorsement-img img {
+  height: 510px;
+}
+
+.bg-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.bg-holder img {
+  width: 100vw;
 }
