@@ -488,7 +488,12 @@
       </section>
       <section class="footer-trademarks">
         <!-- not sure if it should be a button or a div -->
-        <div><button>(inserticon) Worldwide</button></div>
+        <div>
+          <button class="button-f-world">
+            <ion-icon name="globe-outline" class="globe-outline"></ion-icon>
+            Worldwide
+          </button>
+        </div>
         <section class="footer-copyrights">
           <article>
             <p>
@@ -507,12 +512,25 @@
                 <li><a href="#">Trust</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Cookie Preferencess</a></li>
-                <li><a href="#">(insertICON)Your Privacy Choices</a></li>
+                <li>
+                  <a href="#"
+                    ><ion-icon name="checkmark-outline"></ion-icon>Your Privacy
+                    Choices</a
+                  >
+                </li>
               </ul>
             </nav>
           </article>
         </section>
       </section>
     </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
