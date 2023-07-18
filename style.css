@@ -356,15 +356,19 @@ main {
 
 .a-us-cust-button {
   grid-column: 4 / span 6;
+  align-items: flex-start;
 }
 
 .customer-container {
+  align-items: flex-start;
   display: inline-flex;
   justify-content: space-between;
   grid-column: 3 / span 8;
   column-gap: 30px;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  width: 1400px;
 }
 
 .card-customer {
@@ -390,4 +394,12 @@ main {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
+}
+
+.pricing-img img {
+  height: auto;
+  width: 100%;
+}
+
+.sale-pricing {
 }
