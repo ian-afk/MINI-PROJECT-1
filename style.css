@@ -15,8 +15,60 @@ body {
   font-family: "Forum", cursive;
   font-family: "Noto Sans", sans-serif;
 }
+
 main {
   display: block;
+}
+
+.sticky_a {
+  background-color: white !important;
+}
+
+header {
+  position: static;
+  position: sticky;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  top: 0;
+  z-index: 2;
+}
+#widthcontact {
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+.withbutton {
+  min-width: 130px;
+}
+
+#login {
+  min-width: 100px;
+}
+
+#hcenter {
+  background-color: #032d60;
+}
+
+#container1 {
+  background-image: linear-gradient(to bottom #3156a52a, #cccccc17),
+    url("miniproject-images 2/flying-rabbit.webp");
+  height: 650px;
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+#box-article {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.notif-icon {
+  height: 25px;
 }
 .font-header {
   color: #032d60;
@@ -141,7 +193,6 @@ main {
   justify-content: center;
   align-items: center;
   column-gap: 40px;
-  margin: 0 46px;
 }
 
 .product-demo article {
@@ -401,5 +452,97 @@ main {
   width: 100%;
 }
 
-.sale-pricing {
+.sale-pricing > div:first-child {
+  display: grid;
+  grid-template-columns: repeat(12, 70px);
+  column-gap: 40px;
+  height: 800px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 0;
+  place-items: center;
+  box-shadow: -1px 1px 5px 2px rgb(190, 188, 188);
+}
+.content-pricing {
+  grid-column: 5 / span 4;
+}
+.pricing-img {
+  grid-column: 9 / span 8;
+}
+
+.pricing-img img {
+  height: auto;
+  width: 100%;
+}
+
+.help-you {
+  text-align: center;
+  height: 400px;
+}
+
+.footer-sites {
+  margin-left: 300px;
+  display: grid;
+  width: 1200px;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+}
+
+.footer-sites ul {
+  list-style-type: none;
+}
+.our-tech {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.section-6 {
+  background-image: url("miniproject-images/pb-hp-products-bg-2.gif");
+  background-color: white;
+  height: 900px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border-bottom-left-radius: 150% 825px;
+  border-bottom-right-radius: 150% 825px;
+}
+
+.contact-us {
+  margin-top: 50px;
+  display: grid;
+  grid-template-rows: 1fr 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-contact-footer ul {
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 25px;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-footer ul {
+  padding: 0;
+}
+
+.contact-det {
+  font-size: 24px;
+  line-height: 35px;
+}
+
+.question-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edition {
+  font-style: none;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 200px;
 }
