@@ -61,7 +61,7 @@ main {
   width: 100%;
 }
 
-.bg-holder {
+/* .bg-holder {
   position: absolute;
   top: 0;
   left: 0;
@@ -75,7 +75,7 @@ main {
   object-position: bottom;
   object-fit: cover;
   height: 100%;
-}
+} */
 
 .secondbg {
   width: 100%;
@@ -120,7 +120,7 @@ main {
   width: 100%;
   display: block;
   place-items: center;
-  height: 1000px;
+  height: 1200px;
 }
 
 /* .container-demos > div:first-child {
@@ -210,4 +210,100 @@ main {
   border: 2px solid #0176d3;
   color: #0176d3;
   font-size: 16px;
+}
+
+.about-us {
+  position: relative;
+  display: block;
+  height: 450px;
+  overflow: hidden;
+}
+
+.about-us > div:first-child {
+  place-items: center;
+  text-align: center;
+  display: grid;
+  width: 100%;
+  padding: 50px 0;
+  grid-template-rows: 300px 40px;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(12, 70px);
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
+.content-about-us {
+  grid-column: 3 / span 8;
+}
+
+.about-us-demo-buttons {
+  grid-column: 4 / span 6;
+}
+
+.footer-trademarks {
+  grid-template-columns: 300px 1fr;
+  column-gap: 20px;
+  font-size: 12px;
+  width: 100%;
+  margin-top: 30px;
+  padding: 30px;
+  display: grid;
+  background-color: #032e61;
+  color: white;
+}
+
+.footer-trademarks > div:first-child {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
+.footer-copyrigths {
+  margin: 0 300px;
+}
+
+.footer-copyrigths ul {
+  display: inline-flex;
+}
+
+.allright {
+  color: #00a1e0;
+}
+.allright:hover {
+  color: white;
+}
+.footer-nav {
+  display: flex;
+  padding: 0;
+}
+
+.footer-nav li {
+  list-style-type: none;
+}
+
+.footer-nav a {
+  margin-right: 24px;
+  padding: 0;
+  color: #00a1e0;
+}
+
+.footer-nav a:hover {
+  color: white;
+}
+
+.container-indorsement {
+  background-image: url("miniproject-images/intro-bg-final.png");
+  height: 800px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.container-demos {
+  background-image: url("miniproject-images/demos-bg-f.2.png");
+  height: 800px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
